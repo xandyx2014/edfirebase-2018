@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Autenticación con email en Firebase</title>
+</head>
+
+<body>
+  <h1>Autenticación con email en Firebase</h1>
+  <h2>Registro de Usuarios (Sign in)</h2>
+  <form id="signin">
+    <input type="text" name="name" placeholder="Tu nombre" required>
+    <br>
+    <input type="email" name="email" placeholder="Tu email" required>
+    <br>
+    <input type="password" name="password" placeholder="Tu contraseña" required>
+    <br>
+    <input type="submit" value="Registrar">
+  </form>
+  <div id="signin-message"></div>
+  <h2>Inicio de Sesión (Log in)</h2>
+  <form id="login">
+    <input type="email" name="email" placeholder="Tu email" required>
+    <br>
+    <input type="password" name="password" placeholder="Tu contraseña" required>
+    <br>
+    <input type="submit" value="Ingresar">
+  </form>
+  <div id="login-message"></div>
+  <p id="session-message"></p>
+  <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+  <script>
+    ;
+    ((d, c, f) => {
+      const config = {
+        apiKey: "AIzaSyA-PEfy880E6VlYJNBuKmP_sdB4FaOp3kQ",
+        authDomain: "edfirebase-6f24b.firebaseapp.com",
+        databaseURL: "https://edfirebase-6f24b.firebaseio.com",
+        projectId: "edfirebase-6f24b",
+        storageBucket: "edfirebase-6f24b.appspot.com",
+        messagingSenderId: "971660403208"
+      }
+
+      f.initializeApp(config)
+    })(document, console.log, firebase);
+  </script>
+</body>
+
+</html>
