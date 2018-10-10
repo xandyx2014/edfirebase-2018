@@ -33,7 +33,7 @@
       hola.innerText = data.val()
 
     })
-// agrega un ID 
+// agrega un ID y cada vez que se inserta crea otro registro
     db.ref().child('data-push').push({
       message: 'Hola EDteam, insertando datos con el método push'
     })
