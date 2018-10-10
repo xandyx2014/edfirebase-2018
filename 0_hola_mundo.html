@@ -37,7 +37,7 @@
     db.ref().child('data-push').push({
       message: 'Hola EDteam, insertando datos con el método push'
     })
-// lo agrega sin ID
+// lo agrega sin ID ym cada vez que se inserta si existe lo actualiza
     db.ref().child('data-set').set({
       message: 'Hola EDteam, insertando datos con el método set'
     })
